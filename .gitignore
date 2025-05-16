@@ -5,3 +5,7 @@
 # Directories created by the RAD Studio IDE whenever files are edited
 __history/
 __recovery/
+
+Files/ISCmplr.dll.issig
+Files/ISPP.dll.issig
+Files/MyKey.isprivatekey
