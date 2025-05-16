@@ -1,0 +1,1 @@
+set ISSIGTOOL_KEY_FILE=MyKey.isprivatekey
