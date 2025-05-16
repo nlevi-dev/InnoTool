@@ -3,7 +3,7 @@
         <ProjectGuid>{CB865E8F-FE9C-46FD-90B0-AB3BDBD1C906}</ProjectGuid>
         <MainSource>ISCC.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <TargetedPlatforms>1</TargetedPlatforms>
         <AppType>Console</AppType>
         <FrameworkType>None</FrameworkType>

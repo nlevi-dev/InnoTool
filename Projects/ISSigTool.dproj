@@ -3,7 +3,7 @@
         <ProjectGuid>{484EE7D9-65D0-44DA-B807-9FC874733A64}</ProjectGuid>
         <MainSource>ISSigTool.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <TargetedPlatforms>1</TargetedPlatforms>
         <AppType>Console</AppType>
         <FrameworkType>None</FrameworkType>

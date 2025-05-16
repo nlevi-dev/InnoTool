@@ -3,7 +3,7 @@
         <ProjectGuid>{058C4E22-A1B3-4C10-9062-05B58D9E9747}</ProjectGuid>
         <MainSource>ISHelpGen.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <TargetedPlatforms>1</TargetedPlatforms>
         <AppType>Console</AppType>
         <FrameworkType>None</FrameworkType>

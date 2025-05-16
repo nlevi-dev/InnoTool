@@ -3,7 +3,7 @@
         <ProjectGuid>{7BEFDB9E-3F9B-4206-BAC1-B332E573D3F8}</ProjectGuid>
         <MainSource>ISPP.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <TargetedPlatforms>1</TargetedPlatforms>
         <AppType>Library</AppType>
         <FrameworkType>None</FrameworkType>

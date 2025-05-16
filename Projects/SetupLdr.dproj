@@ -3,7 +3,7 @@
         <ProjectGuid>{4259E59E-2263-4FE8-8E6C-BFCBC7A6C66D}</ProjectGuid>
         <MainSource>SetupLdr.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <TargetedPlatforms>1</TargetedPlatforms>
         <AppType>Application</AppType>
         <FrameworkType>None</FrameworkType>
