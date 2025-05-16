@@ -2855,7 +2855,8 @@ begin
 
   IsRespawnedProcess := False;
   EnableLogging := False;
-  WantToSuppressMsgBoxes := False;
+  InitSilent := True;
+  WantToSuppressMsgBoxes := True;
   DebugServerWnd := 0;
   for I := StartParam to NewParamCount do begin
     SplitNewParamStr(I, ParamName, ParamValue);
@@ -2867,7 +2868,7 @@ begin
       EnableLogging := True;
       LogFilename := ParamValue;
     end else if CompareText(ParamName, '/Silent') = 0 then
-      InitSilent := True
+      InitSilent := False
     else if CompareText(ParamName, '/VerySilent') = 0 then
       InitVerySilent := True
     else if CompareText(ParamName, '/NoRestart') = 0 then
@@ -2916,7 +2917,7 @@ begin
     else if CompareText(ParamName, '/RestartExitCode=') = 0 then
       InitRestartExitCode := StrToIntDef(ParamValue, 0)
     else if CompareText(ParamName, '/SuppressMsgBoxes') = 0 then
-      WantToSuppressMsgBoxes := True
+      WantToSuppressMsgBoxes := False
     else if CompareText(ParamName, '/DETACHEDMSG') = 0 then  { for debugging }
       DetachedUninstMsgFile := True
     else if CompareText(ParamName, '/SPAWNWND=') = 0 then begin

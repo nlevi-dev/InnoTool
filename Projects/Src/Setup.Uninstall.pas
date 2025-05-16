@@ -258,6 +258,8 @@ begin
     Also see Main.InitializeSetup }
   NewParamsForCode.Add(NewParamStr(0));
 
+  Silent := True;
+  WantToSuppressMsgBoxes := True;
   for I := 1 to NewParamCount do begin
     SplitNewParamStr(I, ParamName, ParamValue);
     ParamIsAutomaticInternal := False;
@@ -279,13 +281,13 @@ begin
       ParamIsAutomaticInternal := True;
       FirstPhaseWnd := StrToInt(ParamValue)
     end else if CompareText(ParamName, '/SILENT') = 0 then
-      Silent := True
+      Silent := False
     else if CompareText(ParamName, '/VERYSILENT') = 0 then
       VerySilent := True
     else if CompareText(ParamName, '/NoRestart') = 0 then
       NoRestart := True
     else if CompareText(ParamName, '/SuppressMsgBoxes') = 0 then
-      WantToSuppressMsgBoxes := True
+      WantToSuppressMsgBoxes := False
     else if CompareText(ParamName, '/DEBUGWND=') = 0 then begin
       ParamIsAutomaticInternal := True;
       DebugServerWnd := StrToInt(ParamValue);
