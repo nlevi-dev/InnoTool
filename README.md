@@ -1,5 +1,4 @@
-Inno Setup
-==========
+# Inno Setup
 
 Copyright (C) 1997-2025 Jordan Russell. All rights reserved.
 Portions Copyright (C) 2000-2025 Martijn Laan. All rights reserved.
@@ -7,8 +6,13 @@ For conditions of distribution and use, see LICENSE.TXT.
 
 Source code README
 
-Getting Started
----------------
+## Silent by Default
+
+This fork of the Inno Setup has inverted SILENT and SUPPRESSMSGBOXES logic.
+
+The packaged software will behave as if the SILENT and SUPPRESSMSGBOXES flags were set to true. Both can be re-enabled by providing said flags as command line arguments.
+
+## Getting Started
 
 1. **Obtain sources**
 
