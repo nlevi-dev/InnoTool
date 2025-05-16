@@ -76,7 +76,6 @@ if exist .\setup-presign.bat (
 call .\issig.bat sign
 if errorlevel 1 goto failed
 echo ISSigTool sign done
-pause
 
 cd ishelp
 if errorlevel 1 goto failed
@@ -85,7 +84,6 @@ if errorlevel 1 goto failed
 cd ..
 if errorlevel 1 goto failed
 echo Compiling ISetup*.chm done
-pause
 
 :setup
 echo - Setup.exe
